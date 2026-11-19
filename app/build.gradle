@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.hu.medialoop'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.hu.medialoop'
+        minSdk 24          // Android 7.0，需求最低版本
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 纯 Framework 实现：不引入 AndroidX / appcompat / 任何第三方库
+    // 目的：APK 体积小、启动快、1GB 内存机顶盒开销可控
+}
+
+dependencies {
+}

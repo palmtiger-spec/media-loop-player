@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">媒体循环播放</string>
+    <string name="start_play">开始播放</string>
+    <string name="settings">播放设置</string>
+    <string name="admin">后台管理</string>
+    <string name="logs">运行日志</string>
+    <string name="empty_hint">暂无可播放文件，请在设置中指定媒体目录或添加网络资源</string>
+</resources>

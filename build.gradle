@@ -1,0 +1,8 @@
+// 顶层构建脚本：Android Gradle Plugin 8.1.4（需 JDK 17 + Gradle 8.2）
+plugins {
+    id 'com.android.application' version '8.1.4' apply false
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

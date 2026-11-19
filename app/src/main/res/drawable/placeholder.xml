@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 占位图：纯色 drawable，无需额外图片资源，低端机友好 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#FF37474F" />
+    <stroke android:width="2dp" android:color="#FF90A4AE" />
+</shape>

@@ -122,6 +122,11 @@ public final class LruDiskCache {
         totalBytes -= e.size;
     }
 
+    /** 淘汰至容量上限以内：重建索引后若历史缓存超限，按当前策略收缩 */
+    private void trim() {
+        while (totalBytes > maxBytes && !map.isEmpty()) evictOne();
+    }
+
     public void clear() {
         for (Entry e : map.values()) if (e.file.exists()) e.file.delete();
         map.clear();
